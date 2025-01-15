@@ -42,6 +42,7 @@ in {
 
     users.users."${username}" = {
         isNormalUser = true;
+        initialPassword = "changeme";
         extraGroups = [ "audio" "networkmanager" "video" "wheel" "docker" "dialout" "plugdev" ];
     };
 
